@@ -43,12 +43,14 @@ node {
         res = commonlib.shell(
             returnAll: true,
             script: """
+              ${buildlib.ELLIOTT_BIN} repair-bugs --advisory ${adv} --auto --comment ${comment} --close-placeholder --from RELEASE_PENDING --to VERIFIED
+              ${buildlib.ELLIOTT_BIN} remove-bugs --advisory ${adv} --auto
               ${buildlib.ELLIOTT_BIN} change-state --state NEW_FILES --advisory ${adv}
               ${buildlib.ELLIOTT_BIN} advisory-drop ${adv}
             """,
         )
         print(res)
     }
-        
+
     buildlib.cleanWorkspace()
 }
