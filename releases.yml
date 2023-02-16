@@ -50,7 +50,12 @@ releases:
         - id: OCPBUGS-3048  # why: fixed in previous release
       members:
         images: []
-        rpms: []
+        rpms:
+          distgit_key: microshift
+          why: Pin microshift to assembly
+          metadata:
+            is:
+              el8: microshift-4.12.3-202302112006.p0.g932074d.assembly.4.12.3.el8
       rhcos:
         machine-os-content:
           images:
