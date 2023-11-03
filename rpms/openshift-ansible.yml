@@ -14,4 +14,3 @@ hotfix_targets:
 - rhaos-{MAJOR}.{MINOR}-rhel-9-hotfix
 owners:
 - rteague@redhat.com
-- sdodson@redhat.com
