@@ -20,6 +20,7 @@ releases:
       issues:
         exclude:
         - id: OCPBUGS-18792
+        - id: OCPBUGS-18794
       members:
         images: []
         rpms: []
