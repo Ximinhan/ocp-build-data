@@ -114,8 +114,6 @@ repos:
         s390x: https://rhsm-pulp.corp.redhat.com/content/dist/layered/rhel8/s390x/ansible/2.9/os/
         x86_64: https://rhsm-pulp.corp.redhat.com/content/dist/layered/rhel8/x86_64/ansible/2.9/os/
       ci_alignment:
-        profiles:
-        - el8
         localdev:
           enabled: true
     content_set:
