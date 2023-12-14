@@ -412,16 +412,22 @@ bug_mapping:
       issue_component: Bare Metal Hardware Provisioning / ironic
     openvswitch2.13:
       issue_component: Networking / openshift-sdn
+      issue_project: FDP
     openvswitch2.15:
       issue_component: Networking / openshift-sdn
+      issue_project: FDP
     openvswitch2.16:
       issue_component: Networking / openshift-sdn
+      issue_project: FDP
     openvswitch2.17:
       issue_component: Networking / openshift-sdn
+      issue_project: FDP
     openvswitch3.0:
       issue_component: Networking / openshift-sdn
+      issue_project: FDP
     openvswitch3.1:
       issue_component: Networking / openshift-sdn
+      issue_project: FDP
     operator-lifecycle-manager-container:
       issue_component: OLM
     operator-registry-container:
