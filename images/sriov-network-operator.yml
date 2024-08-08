@@ -10,6 +10,8 @@ content:
         target: release-{MAJOR}.{MINOR}
       url: git@github.com:openshift-priv/sriov-network-operator.git
       web: https://github.com/openshift/sriov-network-operator
+      org: openshift
+      repo: sriov-network-operator
     ci_alignment:
       streams_prs:
         ci_build_root:
@@ -31,7 +33,17 @@ name_in_bundle: sriov-network-operator
 owners:
 - multus-dev@redhat.com
 update-csv:
-  bundle-dir: 'stable/'
+  bundle-dir: stable/
   manifests-dir: manifests
   registry: image-registry.openshift-image-registry.svc:5000
-  valid-subscription-label: '["OpenShift Kubernetes Engine", "OpenShift Container Platform", "OpenShift Platform Plus"]'
+  valid-subscription-label: '["OpenShift Kubernetes Engine", "OpenShift Container
+    Platform", "OpenShift Platform Plus"]'
+image_has_bundle: 'True'
+image_references:
+- sriov-network-operator
+- sriov-network-config-daemon
+- sriov-cni
+- sriov-network-device-plugin
+- sriov-dp-admission-controller
+- sriov-network-webhook
+- sriov-infiniband-cni

@@ -10,6 +10,8 @@ content:
         target: release-{MAJOR}.{MINOR}
       url: git@github.com:openshift-priv/gcp-filestore-csi-driver-operator.git
       web: https://github.com/openshift/gcp-filestore-csi-driver-operator
+      org: openshift
+      repo: gcp-filestore-csi-driver-operator
     ci_alignment:
       streams_prs:
         ci_build_root:
@@ -39,3 +41,13 @@ update-csv:
   registry: image-registry.openshift-imageregistry.svc:5000
   valid-subscription-label: '["OpenShift Container Platform", "OpenShift Platform
     Plus"]'
+image_has_bundle: 'True'
+image_references:
+- gcp-filestore-csi-driver-rhel8-operator
+- gcp-filestore-csi-driver-container-rhel8
+- csi-external-provisioner
+- csi-external-resizer
+- csi-external-snapshotter
+- csi-node-driver-registrar
+- csi-livenessprobe
+- kube-rbac-proxy

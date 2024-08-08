@@ -10,6 +10,8 @@ content:
         target: release-{MAJOR}.{MINOR}
       url: git@github.com:openshift-priv/ptp-operator.git
       web: https://github.com/openshift/ptp-operator
+      org: openshift
+      repo: ptp-operator
     ci_alignment:
       streams_prs:
         enabled: true
@@ -29,11 +31,19 @@ from:
 name: openshift/ose-ptp-rhel9-operator
 name_in_bundle: ptp-operator
 labels:
-  summary: Operator that manages PTP (Precision Time Protocol) configuration on an openshift cluster
+  summary: Operator that manages PTP (Precision Time Protocol) configuration on an
+    openshift cluster
 owners:
 - multus-dev@redhat.com
 update-csv:
   bundle-dir: stable/
   manifests-dir: manifests/
   registry: image-registry.openshift-image-registry.svc:5000
-  valid-subscription-label: '["OpenShift Kubernetes Engine", "OpenShift Container Platform", "OpenShift Platform Plus"]'
+  valid-subscription-label: '["OpenShift Kubernetes Engine", "OpenShift Container
+    Platform", "OpenShift Platform Plus"]'
+image_has_bundle: 'True'
+image_references:
+- ptp-operator
+- ptp
+- kube-rbac-proxy
+- cloud-event-proxy
