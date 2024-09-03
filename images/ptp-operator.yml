@@ -10,8 +10,6 @@ content:
         target: release-{MAJOR}.{MINOR}
       url: git@github.com:openshift-priv/ptp-operator.git
       web: https://github.com/openshift/ptp-operator
-      org: openshift
-      repo: ptp-operator
     ci_alignment:
       streams_prs:
         enabled: true
@@ -41,6 +39,7 @@ update-csv:
   registry: image-registry.openshift-image-registry.svc:5000
   valid-subscription-label: '["OpenShift Kubernetes Engine", "OpenShift Container
     Platform", "OpenShift Platform Plus"]'
+  image-references-path: manifests/image-references
 image_has_bundle: 'True'
 image_references:
 - ptp-operator
