@@ -5,8 +5,6 @@ content:
       web: https://github.com/openshift/metallb-operator
       branch:
         target: release-{MAJOR}.{MINOR}
-      org: openshift
-      repo: metallb-operator
     dockerfile: Dockerfile.openshift
     ci_alignment:
       streams_prs:
@@ -31,6 +29,7 @@ update-csv:
   registry: image-registry.openshift-image-registry.svc:5000
   valid-subscription-label: '["OpenShift Kubernetes Engine", "OpenShift Container
     Platform", "OpenShift Platform Plus"]'
+  image-references-path: manifests/stable/image-references
 image_has_bundle: 'True'
 image_references:
 - metallb-rhel9-operator
