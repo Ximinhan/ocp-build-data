@@ -6,8 +6,6 @@ content:
         target: release-{MAJOR}.{MINOR}
       url: git@github.com:openshift-priv/local-storage-operator.git
       web: https://github.com/openshift/local-storage-operator
-      org: openshift
-      repo: local-storage-operator
     ci_alignment:
       streams_prs:
         ci_build_root:
@@ -38,6 +36,7 @@ update-csv:
   registry: image-registry.openshift-image-registry.svc:5000
   valid-subscription-label: '["OpenShift Kubernetes Engine", "OpenShift Container
     Platform", "OpenShift Platform Plus"]'
+  image-references-path: config/manifests/stable/image-references
 image_has_bundle: 'True'
 image_references:
 - local-storage-operator
