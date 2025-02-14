@@ -13,7 +13,7 @@ releases:
           extras: 144054
           image: 144055
           metadata: 144056
-          microshift: 144057
+          microshift: 144058
           prerelease: 144058
           rpm: 144059
         operator_index_mode: pre-release
@@ -22,10 +22,10 @@ releases:
       permits:
       # for ECs and RCs this should not block us
         - code: CONFLICTING_GROUP_RPM_INSTALLED
-          component: 'rhcos'
+          component: rhcos
       # for ECs and RCs this should not block us
         - code: CONFLICTING_INHERITED_DEPENDENCY
-          component: 'rhcos'
+          component: rhcos
       members:
         images: []
         rpms:
