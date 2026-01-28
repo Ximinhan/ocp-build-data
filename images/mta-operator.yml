@@ -5,7 +5,7 @@ content:
       branch:
         target: release-0.8
       url: git@github.com:openshift-priv/migtools-mta-operator.git
-      web: https://github.com/migtools/mta-operator
+      web: https://github.com/Ximinhan/mta-operator
 jira:
   project: MTA
   component: Operator
