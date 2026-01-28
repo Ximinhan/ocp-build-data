@@ -55,7 +55,7 @@ assemblies:
 
 public_upstreams:
 - private: "https://github.com/openshift-priv"
-  public:  "https://github.com/migtools"
+  public:  "https://github.com/Ximinhan"
 
 urls:
   brewhub: https://brewhub.engineering.redhat.com/brewhub
