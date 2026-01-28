@@ -54,8 +54,8 @@ assemblies:
   enabled: true
 
 public_upstreams:
-- private: "https://github.com/openshift-priv"
-  public:  "https://github.com/migtools"
+- private: "https://github.com/openshift-priv/migtools-mta-operator"
+  public:  "https://github.com/Ximinhan/mta-operator"
 
 urls:
   brewhub: https://brewhub.engineering.redhat.com/brewhub
